@@ -3,7 +3,27 @@
 ### Introduction
     This repository contains a tool used to analyse Android APK file and record its permissions claim.
     **This tool is developed by Jian Xiong for his undergraduate design.**
-### Requirement
+
+### Usage
+    Just open run the command: python tool.py --apk_path=__your file which contains your apks__ --res_path=__the file you want to store your result__
+    For example:
+                                                                     
+        your file which contains your Android APKs                      the file you want to store your result
+        │                                                               │ 
+        └───A.apk                                                       └───A
+        │                                                               │   │───....   
+        └───B.apk                                                       │   │───AndroidManifest.xml    
+        │                                                               │   │───aoktool.yml    
+        └───C.apk                                                       │
+                                                                        └───B
+                                                                        │   │───...
+                                                                        │   │───AndroidManifest.xml
+                                                                        │   │───apktool.yml
+                                                                        │───...
+                                                                        │───...
+                                                                        │───result.xlsx
+                                                                         
+### Requirement                                                            
     Your device must contain the following environment:
         Python >= 3.7
         apktool
