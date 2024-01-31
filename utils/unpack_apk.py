@@ -10,8 +10,9 @@ def batch_unpack(apk_path, res_path):
     t_files = tqdm(files)
     for file in t_files:
         fileName = file[0: -4]
-        cmd = os.path.join(os.path.abspath(r".."), "apktool.jar") + " d " + os.path.join(apk_path, file) + " -o " +  os.path.join(res_path, fileName)
+        cmd = os.path.join(os.path.abspath(r"."), "apktool.jar") + " d " + os.path.join(apk_path, file) + " -o " +  os.path.join(res_path, fileName)
         os.system(cmd)
+    print("*********解包完成*********")
 
 
 if __name__ == "__main__":
