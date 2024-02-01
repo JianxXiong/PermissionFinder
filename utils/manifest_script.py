@@ -26,7 +26,8 @@ def get_permissions(parser, Handler, res_path):
     permissions = []
     files = os.listdir(res_path)
     t_files = tqdm(files)
-    for file in t_files:
+    #对解包的结果文件夹依次分析AndroidManifest.xml
+    for file in t_files:        
         first_path = os.path.join(res_path, file)
         if os.path.isdir(first_path):
             for f in os.listdir(first_path):

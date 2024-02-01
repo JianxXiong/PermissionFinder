@@ -13,7 +13,7 @@
         └───A.apk                                                       └───A
         │                                                               │   │───....   
         └───B.apk                                                       │   │───AndroidManifest.xml    
-        │                                                               │   │───aoktool.yml    
+        │                                                               │   │───apktool.yml    
         └───C.apk                                                       │
                                                                         └───B
                                                                         │   │───...
