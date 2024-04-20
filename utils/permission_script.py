@@ -43,7 +43,7 @@ def get_permissions(parser, Handler, res_path):
 
 def write_permissions(permissions, res_path):
 
-    excel_path = os.path.join(res_path, "result.xlsx")
+    excel_path = os.path.join(res_path, "permissions.xlsx")
     if os.path.exists(excel_path):
         excel_file = load_workbook(excel_path)
         sheet = excel_file["Sheet1"]

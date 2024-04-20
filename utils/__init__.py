@@ -1,4 +1,8 @@
 from utils.unpack_apk import batch_unpack
-from utils.manifest_script import UsePermissionHandler
-from utils.manifest_script import get_permissions
-from utils.manifest_script import write_permissions
+from utils.permission_script import UsePermissionHandler
+from utils.permission_script import get_permissions
+from utils.permission_script import write_permissions
+
+from utils.component_script import ComponentHandler
+from utils.component_script import component_statistics
+from utils.component_script import write_components
